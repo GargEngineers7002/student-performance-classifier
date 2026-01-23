@@ -1,0 +1,21 @@
+Project Goal: Build a Logistic Regression model to predict whether a student will Pass or Fail based on academic and lifestyle features.
+⚠️ Judging Criteria (Pass Requirements)
+Your model must pass the following 3 tests to be accepted:
+
+Test 1: The Accuracy Score
+Since this is a classification task, we evaluate performance using Accuracy.
+Requirement: Your model must achieve an Accuracy of 0.85 or higher on the Test Set.
+Why? This proves your model correctly classifies most students.
+
+Test 2: The Confusion Matrix (Visual Proof)
+Since we predict categories (Pass/Fail) instead of exact numbers, we use a Confusion Matrix.
+Requirement: Save a confusion matrix plot where:
+X-Axis: Predicted Labels
+Y-Axis: Actual Labels
+Labels: Pass (1), Fail (0)
+Visual Check: Most values should be on the diagonal (correct predictions)
+Why? This visually proves your classifier isn’t mislabeling students randomly.
+
+Test 3: The F1 Score (Error Balance Check)
+Requirement: Your model must achieve an F1 Score of 0.80 or higher.
+Why? This ensures your model balances Precision and Recall properly and doesn’t favor only one class (e.g., predicting everyone as “Pass”).

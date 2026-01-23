@@ -1,0 +1,36 @@
+Execution Plan (Step-by-Step)
+This roadmap guides students from setup all the way to passing the automated judging tests.
+
+hase 1: Setup & Data Preparation
+Repository: Create a new GitHub repository named student-performance-classifier.
+Environment: Set up a local Python environment (using virtualenv or Conda).
+Data: Create a file named student_data.csv inside a dataset/ folder and paste the provided dataset into it.
+
+Phase 2: Exploration & Analysis
+Load: Import pandas and read the CSV file.
+Visualize: Create histograms or box plots for each feature.
+Create a correlation heatmap to understand which features influence Pass/Fail the most.
+Plot study hours vs. pass/fail to visually inspect class separation.
+
+Phase 3: Building the Model
+Split: Divide the data into a Training Set (80%) and a Test Set (20%) using train_test_split.
+Scale: Use StandardScaler to normalize the feature values.
+Train: Import LogisticRegression from Scikit-Learn and fit the model on the Training Set only.
+
+Phase 4: Internal Evaluation (The "Self-Check")
+Predict: Use the model to predict Pass/Fail labels for the Test Set.
+Calculate Metrics: Instead of RMSE and R², calculate:
+Accuracy: Must be 0.85 or higher
+Precision
+Recall
+F1 Score: Must be 0.80 or higher
+Visualize Results: Plot a Confusion Matrix heatmap.
+Plot the ROC Curve to inspect classification performance.
+
+Phase 5: Validation & Submission (Crucial Step)
+Run the Judging Block: Add the specific "Validation Code" provided at the end of the notebook.
+Generate Proof: Ensure the code successfully passes the thresholds and generates the submission/ folder containing:
+model_performance.txt (The classification report)
+confusion_matrix.png (The visual proof plot)
+roc_curve.png (The ROC performance plot)
+Push to GitHub: Commit all files (including the submission/ folder) and push them to the repository for review.
